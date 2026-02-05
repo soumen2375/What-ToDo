@@ -1,0 +1,138 @@
+/* Reset */
+#root {
+  width: 500px;
+  margin: 60px auto;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* App container */
+div {
+  max-width: 480px;
+  margin: 15px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #4d2b8c;
+}
+
+/* Input */
+input {
+  width: 70%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #85409d;
+  box-shadow: 0 0 0 2px rgba(133, 64, 157, 0.15);
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  background: linear-gradient(135deg, #EEA727, #FFEF5F);
+  color: #4d2b8c;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(238, 167, 39, 0.4);
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Todo item */
+li {
+  background: #f9f7ff;
+  border: 1px solid rgba(77, 43, 140, 0.15);
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Todo text */
+li span {
+  flex: 1;
+  font-size: 16px;
+  color: #4d2b8c;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Strike-through
+li span[style] {
+  opacity: 0.6;
+} */
+
+/* Buttons inside list */
+li button {
+  margin-left: 6px;
+  background: #85409d;
+  color: white;
+}
+
+li button:nth-child(3) {
+  background: #4d2b8c;
+}
+
+/* Bottom action button */
+div > button:last-of-type {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #4d2b8c, #85409d);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  div {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
